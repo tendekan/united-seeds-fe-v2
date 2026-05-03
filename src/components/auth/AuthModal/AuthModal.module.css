@@ -1,0 +1,46 @@
+.actions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 8px 0 14px;
+  align-items: stretch;
+}
+
+.googleBtn {
+  display: flex;
+  justify-content: center;
+  min-height: 40px;
+}
+
+.googleBtn > div {
+  width: 100%;
+}
+
+.gIcon,
+.fIcon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  font-weight: 800;
+  font-size: 13px;
+  color: #fff;
+  margin-right: 4px;
+}
+
+.gIcon {
+  background: linear-gradient(135deg, #ea4335, #fbbc05 50%, #34a853 80%, #4285f4);
+}
+
+.fIcon {
+  background: #1877f2;
+}
+
+.legal {
+  font-size: 12px;
+  color: var(--muted);
+  margin: 0;
+  text-align: center;
+}

@@ -1,0 +1,27 @@
+.overlay {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(15, 23, 42, 0.35);
+  z-index: var(--z-spinner);
+  backdrop-filter: blur(2px);
+  animation: fade-in var(--duration-fast) var(--ease-out);
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: var(--card);
+  padding: 16px 22px;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-lg);
+  color: var(--muted);
+  font-weight: 500;
+}
+
+.spinner {
+  animation: spin 1s linear infinite;
+}

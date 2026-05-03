@@ -1,0 +1,20 @@
+.image {
+  width: 100%;
+  border-radius: var(--radius-md);
+  display: block;
+}
+
+.close {
+  position: absolute;
+  top: 12px;
+  right: 14px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(15, 23, 42, 0.8);
+  color: #fff;
+  font-size: 22px;
+  cursor: pointer;
+  z-index: 1;
+}

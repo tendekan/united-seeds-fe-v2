@@ -1,0 +1,30 @@
+.card {
+  background: var(--card);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-sm);
+}
+
+.glass {
+  background: var(--surface-glass);
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
+  border-color: rgba(255, 255, 255, 0.65);
+}
+
+.elevated {
+  box-shadow: var(--shadow-lg);
+}
+
+.p_none {
+  padding: 0;
+}
+.p_sm {
+  padding: 12px;
+}
+.p_md {
+  padding: 20px;
+}
+.p_lg {
+  padding: 28px;
+}

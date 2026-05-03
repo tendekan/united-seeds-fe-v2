@@ -1,0 +1,39 @@
+.stack {
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  z-index: var(--z-toast);
+  pointer-events: none;
+}
+
+.toast {
+  pointer-events: auto;
+  background: var(--card);
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 12px 16px;
+  font-size: 14px;
+  box-shadow: var(--shadow-lg);
+  animation: slide-up var(--duration-base) var(--ease-out);
+  min-width: 200px;
+  max-width: 80vw;
+}
+
+.info {
+  border-left: 4px solid var(--accent);
+}
+
+.success {
+  border-left: 4px solid var(--primary);
+  background: linear-gradient(135deg, #ffffff, #f0fdf4);
+}
+
+.error {
+  border-left: 4px solid var(--danger);
+  background: linear-gradient(135deg, #ffffff, #fef2f2);
+  color: var(--danger);
+}

@@ -1,0 +1,35 @@
+.banner {
+  position: fixed;
+  left: 24px;
+  bottom: 24px;
+  max-width: 460px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 16px 18px;
+  box-shadow: var(--shadow-lg);
+  z-index: 5000;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  animation: slide-up var(--duration-base) var(--ease-out);
+}
+
+.banner p {
+  margin: 0;
+  font-size: 13px;
+  color: var(--text-secondary);
+  flex: 1;
+  line-height: 1.5;
+}
+
+@media (max-width: 540px) {
+  .banner {
+    left: 12px;
+    right: 12px;
+    bottom: 90px;
+    max-width: none;
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
