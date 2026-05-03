@@ -1,5 +1,5 @@
 export interface AuthUser {
-  provider: 'google' | 'facebook';
+  provider: 'google';
   userId: string;
   serverUserId?: string;
   name: string;
@@ -107,9 +107,6 @@ export interface SettingsState {
 declare global {
   interface Window {
     UNITEDSEEDS_GOOGLE_CLIENT_ID?: string;
-    UNITEDSEEDS_FACEBOOK_APP_ID?: string;
     google?: any;
-    FB?: any;
-    fbAsyncInit?: () => void;
   }
 }
