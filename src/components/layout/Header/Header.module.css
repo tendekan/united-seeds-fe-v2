@@ -21,39 +21,19 @@
 }
 
 .logo {
-  position: relative;
   width: 44px;
   height: 44px;
   border-radius: 12px;
-  background: var(--grad-rainbow);
-  background-size: 300% 100%;
-  animation: gradient-shift 6s var(--ease-in-out) infinite,
-    float-slow 4.5s var(--ease-in-out) infinite;
+  background: var(--grad-primary);
   display: flex;
   align-items: center;
   justify-content: center;
   color: #fff;
   font-weight: 800;
   letter-spacing: 0.5px;
-  box-shadow: var(--shadow-glow-accent);
+  box-shadow: var(--shadow-glow);
   font-size: 14px;
   flex-shrink: 0;
-  overflow: hidden;
-}
-
-.logo::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(
-    90deg,
-    transparent,
-    rgba(255, 255, 255, 0.45),
-    transparent
-  );
-  transform: translateX(-120%) skewX(-12deg);
-  animation: shimmer 4s var(--ease-out) infinite;
-  animation-delay: 1.5s;
 }
 
 .titles {
@@ -65,12 +45,7 @@
   font-size: 20px;
   font-weight: 800;
   letter-spacing: -0.02em;
-  background: var(--grad-rainbow);
-  background-size: 300% 100%;
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  animation: gradient-shift 7s var(--ease-in-out) infinite;
+  color: var(--brand-slate);
 }
 
 .titles p {

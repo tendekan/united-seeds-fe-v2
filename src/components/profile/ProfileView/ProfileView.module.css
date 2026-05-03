@@ -17,8 +17,8 @@
   align-items: center;
   background: linear-gradient(
     135deg,
-    rgba(124, 58, 237, 0.08),
-    rgba(22, 163, 74, 0.08)
+    rgba(161, 200, 163, 0.18),
+    rgba(56, 142, 60, 0.08)
   );
   border: 1px solid var(--border);
   border-radius: var(--radius-xl);

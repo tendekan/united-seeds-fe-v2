@@ -41,13 +41,13 @@
 }
 
 .active {
-  background: var(--grad-primary);
+  background: var(--primary);
   color: #fff;
-  box-shadow: 0 6px 14px rgba(22, 163, 74, 0.28);
+  box-shadow: var(--shadow-glow);
 }
 
 .active:hover {
-  background: var(--grad-primary);
+  background: var(--primary-600);
   color: #fff;
 }
 
