@@ -26,8 +26,10 @@
   cursor: not-allowed;
 }
 
-.btn:not(:disabled):hover {
-  transform: translateY(-1px);
+@media (hover: hover) {
+  .btn:not(:disabled):hover {
+    transform: translateY(-1px);
+  }
 }
 
 .btn:not(:disabled):active {

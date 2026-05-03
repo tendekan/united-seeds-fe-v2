@@ -13,10 +13,12 @@
   animation: slide-up var(--duration-base) var(--ease-out);
 }
 
-.card:hover {
-  box-shadow: var(--inset-highlight), var(--shadow-md);
-  transform: translateY(-1px);
-  border-color: var(--border-strong);
+@media (hover: hover) {
+  .card:hover {
+    box-shadow: var(--inset-highlight), var(--shadow-md);
+    transform: translateY(-1px);
+    border-color: var(--border-strong);
+  }
 }
 
 .retweetBadge {
@@ -80,8 +82,10 @@
   transition: background var(--duration-fast);
 }
 
-.iconBtn:hover {
-  background: rgba(15, 23, 42, 0.06);
+@media (hover: hover) {
+  .iconBtn:hover {
+    background: rgba(15, 23, 42, 0.06);
+  }
 }
 
 .text {
@@ -159,4 +163,17 @@
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
+}
+
+@media (max-width: 720px) {
+  .card {
+    padding: 14px 16px;
+    border-radius: 0;
+    border-left: none;
+    border-right: none;
+    gap: 10px;
+  }
+  .text {
+    font-size: 14.5px;
+  }
 }

@@ -31,8 +31,16 @@
   padding: 0;
 }
 
-.author:hover {
-  color: var(--primary);
+@media (hover: hover) {
+  .author:hover {
+    color: var(--primary);
+  }
+  .editorActions button:hover {
+    background: var(--primary-soft);
+  }
+  .linkBtn:hover {
+    color: var(--primary);
+  }
 }
 
 .time {
@@ -77,10 +85,6 @@
   border-radius: var(--radius-sm);
 }
 
-.editorActions button:hover {
-  background: var(--primary-soft);
-}
-
 .actions {
   display: flex;
   gap: 12px;
@@ -110,6 +114,3 @@
   padding: 0;
 }
 
-.linkBtn:hover {
-  color: var(--primary);
-}

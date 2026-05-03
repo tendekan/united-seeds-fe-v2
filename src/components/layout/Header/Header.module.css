@@ -91,9 +91,11 @@
     transform var(--duration-fast) var(--ease-out);
 }
 
-.profile:hover {
-  box-shadow: var(--inset-highlight), var(--shadow-sm);
-  transform: translateY(-1px);
+@media (hover: hover) {
+  .profile:hover {
+    box-shadow: var(--inset-highlight), var(--shadow-sm);
+    transform: translateY(-1px);
+  }
 }
 
 .profileInfo {

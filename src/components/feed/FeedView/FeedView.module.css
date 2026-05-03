@@ -33,3 +33,18 @@
   border: 1px dashed var(--border);
   border-radius: var(--radius-md);
 }
+
+@media (max-width: 720px) {
+  .feed {
+    gap: 14px;
+  }
+  .header,
+  .loading,
+  .empty {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+  .header h2 {
+    font-size: 20px;
+  }
+}

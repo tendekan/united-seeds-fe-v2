@@ -48,13 +48,14 @@
   transition: height var(--duration-base) var(--ease-out);
 }
 
-.item:hover {
-  background: var(--primary-soft);
-  color: var(--text);
-}
-
-.item:hover::before {
-  height: 18px;
+@media (hover: hover) {
+  .item:hover {
+    background: var(--primary-soft);
+    color: var(--text);
+  }
+  .item:hover::before {
+    height: 18px;
+  }
 }
 
 .active {
@@ -103,6 +104,19 @@
     justify-content: center;
   }
   .label {
+    display: none;
+  }
+}
+
+@media (max-width: 720px) {
+  .sidebar {
+    border-radius: 0;
+    border-left: none;
+    border-right: none;
+    box-shadow: none;
+    padding: 8px;
+  }
+  .item::before {
     display: none;
   }
 }

@@ -6,3 +6,8 @@ dist
 *.tsbuildinfo
 vite.config.js
 vite.config.d.ts
+/.idea/.gitignore
+/.idea/misc.xml
+/.idea/modules.xml
+/.idea/united-seeds-fe-v2.iml
+/.idea/vcs.xml

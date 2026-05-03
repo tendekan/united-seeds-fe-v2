@@ -19,8 +19,10 @@
   animation: pop var(--duration-base) var(--ease-out);
 }
 
-.toggle:hover {
-  transform: translateY(-3px) scale(1.04);
+@media (hover: hover) {
+  .toggle:hover {
+    transform: translateY(-3px) scale(1.04);
+  }
 }
 
 .toggle.open {
@@ -196,8 +198,10 @@
   transition: transform var(--duration-fast);
 }
 
-.sendBtn:hover:not(:disabled) {
-  transform: translateY(-1px);
+@media (hover: hover) {
+  .sendBtn:hover:not(:disabled) {
+    transform: translateY(-1px);
+  }
 }
 
 .sendBtn:disabled {

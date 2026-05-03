@@ -39,10 +39,12 @@
   animation: pop var(--duration-base) var(--ease-out) backwards;
 }
 
-.tile:hover {
-  transform: translateY(-4px);
-  box-shadow: var(--shadow-md);
-  border-color: var(--primary);
+@media (hover: hover) {
+  .tile:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-md);
+    border-color: var(--primary);
+  }
 }
 
 .icon {

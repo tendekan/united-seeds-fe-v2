@@ -12,7 +12,9 @@
   transition: transform var(--duration-fast) var(--ease-out),
     box-shadow var(--duration-base) var(--ease-out);
 }
-.clickable:hover {
-  transform: scale(1.03);
-  box-shadow: 0 0 0 1px var(--primary), var(--shadow-md);
+@media (hover: hover) {
+  .clickable:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 0 1px var(--primary), var(--shadow-md);
+  }
 }

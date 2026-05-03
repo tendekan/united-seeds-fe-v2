@@ -95,9 +95,11 @@
   color: var(--text);
 }
 
-.statBtn:hover {
-  transform: translateY(-1px);
-  box-shadow: var(--shadow-xs);
+@media (hover: hover) {
+  .statBtn:hover {
+    transform: translateY(-1px);
+    box-shadow: var(--shadow-xs);
+  }
 }
 
 .headerActions {
