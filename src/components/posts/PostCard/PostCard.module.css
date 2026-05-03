@@ -168,9 +168,7 @@
 @media (max-width: 720px) {
   .card {
     padding: 14px 16px;
-    border-radius: 0;
-    border-left: none;
-    border-right: none;
+    border-radius: var(--radius-lg);
     gap: 10px;
   }
   .text {

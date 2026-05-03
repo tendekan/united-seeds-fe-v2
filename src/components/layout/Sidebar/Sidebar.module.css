@@ -110,9 +110,7 @@
 
 @media (max-width: 720px) {
   .sidebar {
-    border-radius: 0;
-    border-left: none;
-    border-right: none;
+    border-radius: var(--radius-lg);
     box-shadow: none;
     padding: 8px;
   }

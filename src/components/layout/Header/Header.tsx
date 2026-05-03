@@ -21,7 +21,7 @@ export function Header() {
       <nav className={styles.authNav}>
         {!user ? (
           <div className={styles.actions}>
-            <Button variant="ghost" size="sm" onClick={() => openAuth('Влез')}>
+            <Button variant="secondary" size="sm" onClick={() => openAuth('Влез')}>
               Влез
             </Button>
             <Button variant="gradient" size="sm" onClick={() => openAuth('Регистрирай се')}>
