@@ -30,9 +30,9 @@ export const CATEGORIES: CategoryDef[] = [
     icon: '🌿',
     apiLabel: 'Gardening',
     subcategories: [
-      { value: 'plants', label: 'Растения' },
-      { value: 'tools', label: 'Инструменти' },
-      { value: 'tips', label: 'Съвети' }
+      { value: 'Plants', label: 'Растения' },
+      { value: 'Landscaping', label: 'Озеленяване' },
+      { value: 'Tools', label: 'Инструменти' }
     ]
   },
   {
@@ -41,9 +41,9 @@ export const CATEGORIES: CategoryDef[] = [
     icon: '🛠️',
     apiLabel: 'Home Repairs',
     subcategories: [
-      { value: 'plumbing', label: 'Водопровод' },
-      { value: 'electrical', label: 'Електро' },
-      { value: 'general', label: 'Общи' }
+      { value: 'Plumbing', label: 'Водопровод' },
+      { value: 'Electrical', label: 'Електричество' },
+      { value: 'Painting', label: 'Боядисване' }
     ]
   },
   {
@@ -52,8 +52,9 @@ export const CATEGORIES: CategoryDef[] = [
     icon: '🏠',
     apiLabel: 'Short Stays',
     subcategories: [
-      { value: 'urban', label: 'Градски' },
-      { value: 'rural', label: 'Селски' }
+      { value: 'Room', label: 'Стая' },
+      { value: 'Studio', label: 'Студио' },
+      { value: 'Apartment', label: 'Апартамент' }
     ]
   },
   {
@@ -62,8 +63,9 @@ export const CATEGORIES: CategoryDef[] = [
     icon: '🏡',
     apiLabel: 'Long Stays',
     subcategories: [
-      { value: 'apartment', label: 'Апартамент' },
-      { value: 'house', label: 'Къща' }
+      { value: 'Room', label: 'Стая' },
+      { value: 'House', label: 'Къща' },
+      { value: 'Apartment', label: 'Апартамент' }
     ]
   },
   {
@@ -71,7 +73,11 @@ export const CATEGORIES: CategoryDef[] = [
     label: 'Строителство',
     icon: '🏗️',
     apiLabel: 'Building',
-    subcategories: [{ value: 'general', label: 'Общи' }]
+    subcategories: [
+      { value: 'Renovation', label: 'Реновация' },
+      { value: 'Construction', label: 'Строителство' },
+      { value: 'Consulting', label: 'Консултации' }
+    ]
   },
   {
     key: 'finance',
@@ -79,8 +85,9 @@ export const CATEGORIES: CategoryDef[] = [
     icon: '💼',
     apiLabel: 'Finance',
     subcategories: [
-      { value: 'investing', label: 'Инвестиране' },
-      { value: 'savings', label: 'Спестявания' }
+      { value: 'Budgeting', label: 'Бюджетиране' },
+      { value: 'Taxes', label: 'Данъци' },
+      { value: 'Investing', label: 'Инвестиции' }
     ]
   },
   {
@@ -89,9 +96,9 @@ export const CATEGORIES: CategoryDef[] = [
     icon: '💻',
     apiLabel: 'IT Lessons',
     subcategories: [
-      { value: 'web', label: 'Уеб' },
-      { value: 'mobile', label: 'Мобилни' },
-      { value: 'data', label: 'Данни' }
+      { value: 'Programming', label: 'Програмиране' },
+      { value: 'Office Tools', label: 'Офис инструменти' },
+      { value: 'Cybersecurity', label: 'Киберсигурност' }
     ]
   },
   {
@@ -99,7 +106,11 @@ export const CATEGORIES: CategoryDef[] = [
     label: 'Ремонт на автомобили',
     icon: '🚗',
     apiLabel: 'Car Repairs',
-    subcategories: [{ value: 'general', label: 'Общи' }]
+    subcategories: [
+      { value: 'Engine', label: 'Двигател' },
+      { value: 'Tires', label: 'Гуми' },
+      { value: 'Diagnostics', label: 'Диагностика' }
+    ]
   },
   {
     key: 'sport',
@@ -107,8 +118,9 @@ export const CATEGORIES: CategoryDef[] = [
     icon: '🏀',
     apiLabel: 'Sport',
     subcategories: [
-      { value: 'football', label: 'Футбол' },
-      { value: 'fitness', label: 'Фитнес' }
+      { value: 'Fitness', label: 'Фитнес' },
+      { value: 'Team Sports', label: 'Отборни спортове' },
+      { value: 'Coaching', label: 'Тренировки' }
     ]
   },
   {
@@ -117,8 +129,9 @@ export const CATEGORIES: CategoryDef[] = [
     icon: '🐾',
     apiLabel: 'Pets',
     subcategories: [
-      { value: 'dogs', label: 'Кучета' },
-      { value: 'cats', label: 'Котки' }
+      { value: 'Grooming', label: 'Подстригване' },
+      { value: 'Training', label: 'Дресировка' },
+      { value: 'Sitting', label: 'Гледане' }
     ]
   },
   {
@@ -127,8 +140,9 @@ export const CATEGORIES: CategoryDef[] = [
     icon: '🎨',
     apiLabel: 'Art',
     subcategories: [
-      { value: 'painting', label: 'Рисуване' },
-      { value: 'music', label: 'Музика' }
+      { value: 'Painting', label: 'Рисуване' },
+      { value: 'Drawing', label: 'Чертане' },
+      { value: 'Crafts', label: 'Занаяти' }
     ]
   },
   {
@@ -136,21 +150,33 @@ export const CATEGORIES: CategoryDef[] = [
     label: 'Красота',
     icon: '💄',
     apiLabel: 'Beauty',
-    subcategories: [{ value: 'general', label: 'Общи' }]
+    subcategories: [
+      { value: 'Makeup', label: 'Грим' },
+      { value: 'Skincare', label: 'Грижа за кожата' },
+      { value: 'Hair', label: 'Коса' }
+    ]
   },
   {
     key: 'healthcare',
     label: 'Здравеопазване',
     icon: '🩺',
     apiLabel: 'Healthcare',
-    subcategories: [{ value: 'general', label: 'Общи' }]
+    subcategories: [
+      { value: 'Wellness', label: 'Здравословен начин на живот' },
+      { value: 'First Aid', label: 'Първа помощ' },
+      { value: 'Nutrition', label: 'Хранене' }
+    ]
   },
   {
     key: 'fashion',
     label: 'Мода',
     icon: '👗',
     apiLabel: 'Fashion',
-    subcategories: [{ value: 'general', label: 'Общи' }]
+    subcategories: [
+      { value: 'Styling', label: 'Стилизиране' },
+      { value: 'Tailoring', label: 'Шивачество' },
+      { value: 'Design', label: 'Дизайн' }
+    ]
   },
   {
     key: 'cooking',
@@ -158,8 +184,9 @@ export const CATEGORIES: CategoryDef[] = [
     icon: '👩‍🍳',
     apiLabel: 'Cooking',
     subcategories: [
-      { value: 'recipes', label: 'Рецепти' },
-      { value: 'baking', label: 'Печене' }
+      { value: 'Baking', label: 'Печене' },
+      { value: 'Meal Prep', label: 'Приготвяне на храна' },
+      { value: 'World Cuisine', label: 'Световна кухня' }
     ]
   }
 ];

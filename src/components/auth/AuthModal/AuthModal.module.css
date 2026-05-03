@@ -16,8 +16,7 @@
   width: 100%;
 }
 
-.gIcon,
-.fIcon {
+.gIcon {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -28,14 +27,7 @@
   font-size: 13px;
   color: #fff;
   margin-right: 4px;
-}
-
-.gIcon {
   background: linear-gradient(135deg, #ea4335, #fbbc05 50%, #34a853 80%, #4285f4);
-}
-
-.fIcon {
-  background: #1877f2;
 }
 
 .legal {
