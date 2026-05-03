@@ -11,19 +11,8 @@
   -webkit-backdrop-filter: var(--glass-blur);
 }
 
-.spacer {
-  flex: 1;
-}
-
-.tag {
-  font-size: 12px;
-}
-
 @media (max-width: 720px) {
   .footer {
     padding: 16px;
-  }
-  .tag {
-    display: none;
   }
 }
