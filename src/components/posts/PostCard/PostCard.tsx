@@ -14,6 +14,7 @@ import {
   unretweetPost,
   updatePost
 } from '@/api/posts';
+import { getComments } from '@/api/comments';
 import { Avatar } from '@/components/ui/Avatar/Avatar';
 import { Button } from '@/components/ui/Button/Button';
 import { PostMedia } from '@/components/posts/PostMedia/PostMedia';
@@ -76,13 +77,17 @@ export function PostCard({ post, retweetBadge, onChanged, onDeleted }: PostCardP
         : Promise.resolve(false),
       currentUserId
         ? isPostRetweetedByUser(post.id, currentUserId).catch(() => false)
-        : Promise.resolve(false)
-    ]).then(([lc, rc, isLiked, isRt]) => {
+        : Promise.resolve(false),
+      getComments(post.id, 1, 1, 'desc')
+        .then((page) => page.total ?? page.comments?.length ?? 0)
+        .catch(() => 0)
+    ]).then(([lc, rc, isLiked, isRt, cc]) => {
       if (cancelled) return;
       setLikeCount(safeCount(lc));
       setRetweetCount(safeCount(rc));
       setLiked(Boolean(isLiked));
       setRetweeted(Boolean(isRt));
+      setCommentCount(safeCount(cc));
     });
     return () => {
       cancelled = true;
