@@ -10,7 +10,17 @@
   background: var(--surface);
   backdrop-filter: var(--glass-blur);
   -webkit-backdrop-filter: var(--glass-blur);
-  border-bottom: 1px solid var(--border);
+  border-bottom: 1px solid transparent;
+  background-image:
+    linear-gradient(var(--surface), var(--surface)),
+    linear-gradient(
+      90deg,
+      transparent 0%,
+      rgba(56, 142, 60, 0.18) 50%,
+      transparent 100%
+    );
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
 }
 
 .brand {
@@ -21,17 +31,17 @@
 }
 
 .logo {
-  width: 44px;
-  height: 44px;
-  border-radius: 12px;
+  width: 42px;
+  height: 42px;
+  border-radius: 13px;
   background: var(--grad-primary);
   display: flex;
   align-items: center;
   justify-content: center;
   color: #fff;
-  font-weight: 800;
-  letter-spacing: 0.5px;
-  box-shadow: var(--shadow-glow);
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  box-shadow: var(--shadow-glow), var(--shadow-sm);
   font-size: 14px;
   flex-shrink: 0;
 }
@@ -72,10 +82,18 @@
   display: flex;
   align-items: center;
   gap: 12px;
-  padding: 4px 10px 4px 4px;
+  padding: 4px 14px 4px 4px;
   background: var(--card);
   border: 1px solid var(--border);
   border-radius: var(--radius-pill);
+  box-shadow: var(--inset-highlight), var(--shadow-xs);
+  transition: box-shadow var(--duration-fast) var(--ease-out),
+    transform var(--duration-fast) var(--ease-out);
+}
+
+.profile:hover {
+  box-shadow: var(--inset-highlight), var(--shadow-sm);
+  transform: translateY(-1px);
 }
 
 .profileInfo {

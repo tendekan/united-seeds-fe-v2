@@ -10,9 +10,9 @@
 .main {
   background: var(--card);
   border: 1px solid var(--border);
-  border-radius: var(--radius-lg);
-  padding: 28px;
-  box-shadow: var(--shadow-sm);
+  border-radius: var(--radius-xl);
+  padding: 32px;
+  box-shadow: var(--inset-highlight), var(--shadow-md);
   min-height: 60vh;
   animation: slide-up var(--duration-base) var(--ease-out);
 }

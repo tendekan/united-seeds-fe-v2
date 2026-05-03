@@ -19,19 +19,26 @@
 .field :where(input, textarea, select) {
   width: 100%;
   border: 1px solid var(--border);
-  border-radius: var(--radius-sm);
-  padding: 9px 12px;
+  border-radius: var(--radius-md);
+  padding: 10px 14px;
   font-size: 14px;
-  background: var(--card);
+  font-family: inherit;
+  background: var(--card-soft);
   color: var(--text);
   transition: border-color var(--duration-fast) var(--ease-out),
-    box-shadow var(--duration-fast) var(--ease-out);
+    box-shadow var(--duration-fast) var(--ease-out),
+    background var(--duration-fast) var(--ease-out);
+}
+
+.field :where(input, textarea, select):hover:not(:focus) {
+  border-color: var(--border-strong);
 }
 
 .field :where(input, textarea, select):focus {
   border-color: var(--primary);
   outline: none;
-  box-shadow: 0 0 0 3px var(--primary-soft);
+  background: var(--card);
+  box-shadow: var(--ring-focus);
 }
 
 .field textarea {

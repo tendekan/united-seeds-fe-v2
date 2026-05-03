@@ -1,8 +1,8 @@
 .avatar {
   border-radius: 50%;
   object-fit: cover;
-  border: 2px solid rgba(255, 255, 255, 0.6);
-  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.12);
+  border: 2px solid rgba(255, 255, 255, 0.85);
+  box-shadow: 0 0 0 1px var(--border), var(--shadow-sm);
   background: var(--card);
   flex-shrink: 0;
 }
@@ -10,9 +10,9 @@
 .clickable {
   cursor: pointer;
   transition: transform var(--duration-fast) var(--ease-out),
-    box-shadow var(--duration-fast) var(--ease-out);
+    box-shadow var(--duration-base) var(--ease-out);
 }
 .clickable:hover {
-  transform: scale(1.04);
-  box-shadow: 0 6px 14px rgba(15, 23, 42, 0.18);
+  transform: scale(1.03);
+  box-shadow: 0 0 0 1px var(--primary), var(--shadow-md);
 }

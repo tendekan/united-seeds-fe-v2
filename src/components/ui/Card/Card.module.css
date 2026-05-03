@@ -1,8 +1,8 @@
 .card {
   background: var(--card);
-  border-radius: var(--radius-lg);
+  border-radius: var(--radius-xl);
   border: 1px solid var(--border);
-  box-shadow: var(--shadow-sm);
+  box-shadow: var(--inset-highlight), var(--shadow-sm);
 }
 
 .glass {

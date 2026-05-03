@@ -1,22 +1,24 @@
 .backdrop {
   position: fixed;
   inset: 0;
-  background: rgba(15, 23, 42, 0.55);
+  background: rgba(20, 30, 36, 0.5);
   display: flex;
   align-items: center;
   justify-content: center;
   z-index: var(--z-modal);
   padding: 16px;
   animation: fade-in var(--duration-base) var(--ease-out);
-  backdrop-filter: blur(4px);
+  backdrop-filter: saturate(1.2) blur(10px);
+  -webkit-backdrop-filter: saturate(1.2) blur(10px);
 }
 
 .dialog {
   position: relative;
   background: var(--card);
-  border-radius: var(--radius-lg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-xl);
   padding: 28px 28px 24px;
-  box-shadow: var(--shadow-xl);
+  box-shadow: var(--inset-highlight), var(--shadow-xl);
   animation: pop var(--duration-base) var(--ease-out);
   width: 100%;
   max-height: calc(100vh - 32px);
@@ -47,24 +49,32 @@
 
 .closeBtn {
   position: absolute;
-  top: 12px;
-  right: 12px;
-  width: 32px;
-  height: 32px;
+  top: 14px;
+  right: 14px;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
-  border: none;
-  background: rgba(15, 23, 42, 0.05);
+  border: 1px solid transparent;
+  background: rgba(0, 0, 0, 0.04);
   color: var(--muted);
-  font-size: 22px;
+  font-size: 20px;
   line-height: 1;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: background var(--duration-fast);
+  transition: background var(--duration-fast) var(--ease-out),
+    color var(--duration-fast) var(--ease-out),
+    border-color var(--duration-fast) var(--ease-out);
 }
 
 .closeBtn:hover {
-  background: rgba(15, 23, 42, 0.1);
+  background: rgba(0, 0, 0, 0.07);
+  border-color: var(--border);
   color: var(--text);
+}
+
+.closeBtn:focus-visible {
+  outline: none;
+  box-shadow: var(--ring-focus);
 }
